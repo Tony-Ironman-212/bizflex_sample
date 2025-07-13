@@ -20,6 +20,7 @@
     0px 0px 6px rgba(255, 255, 255, 0.7), 0px 0px 7px rgba(255, 255, 255, 0.7),
     0px 0px 8px rgba(255, 255, 255, 0.7), 0px 0px 9px rgba(255, 255, 255, 0.7),
     0px 0px 10px rgba(255, 255, 255, 0.7);
+  --breakpoint-xxs: 400px;
 }
 
 @layer components {
@@ -120,6 +121,29 @@
 
     #building-info-table th {
       text-align-last: left;
+    }
+  }
+
+  @media (width > 400px) {
+    .input-group__for-select input {
+      width: 250px;
+    }
+
+    .input-group__for-select span {
+      position: relative;
+      right: 30px;
+    }
+  }
+
+  @media (width <= 400px) {
+    .input-group__for-select input {
+      width: 100%;
+    }
+
+    .input-group__for-select span {
+      position: absolute;
+      right: 10px;
+      top: 6px;
     }
   }
 
@@ -406,7 +430,6 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 4px 8px;
-    width: 250px;
     font-weight: 400;
     cursor: pointer;
     font-size: 14px;
@@ -422,11 +445,6 @@
   .input-group__for-select input:focus {
     outline: none;
     border-color: blue;
-  }
-
-  .input-group__for-select span {
-    position: relative;
-    right: 30px;
   }
 
   /* area select */
