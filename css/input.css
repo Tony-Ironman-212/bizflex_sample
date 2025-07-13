@@ -241,6 +241,11 @@
     background-color: var(--color-secondary);
   }
 
+  /* information 2 */
+  .information_2 {
+    background: url('../img/bg_office.jpg') no-repeat center center / cover;
+  }
+
   /* location v.v... */
 
   .location-bg::before,
