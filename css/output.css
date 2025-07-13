@@ -665,14 +665,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\.\.\/img\/bg_office\.jpg\)\] {
+    background-image: url(../img/bg_office.jpg);
+  }
   .bg-\[url\(\.\.\/img\/private_anime_img\.gif\)\] {
     background-image: url(../img/private_anime_img.gif);
   }
   .bg-\[url\(\.\.\/img\/private_conference_bg\.jpg\)\] {
     background-image: url(../img/private_conference_bg.jpg);
-  }
-  .bg-\[url\(\.\/img\/bg_office\.jpg\)\] {
-    background-image: url(./img/bg_office.jpg);
   }
   .bg-cover {
     background-size: cover;
