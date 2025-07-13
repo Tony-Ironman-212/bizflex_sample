@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizflex 浜松町 | ヒューリック株式会社</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="relative text-white">
+    <!-- npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch -->
+    <!-- header start -->
+    <header>
+      <div
+        class="bg-primary fixed top-0 z-40 flex h-[66px] w-full items-center justify-between"
+      >
+        <!-- logo start -->
+        <div class="ml-4 flex w-[246px] items-center md:w-[280px]">
+          <a href="#">
+            <img
+              src="https://www.hulic.co.jp/business/rent/bizflex/hamamatsucho/images/common/logo.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- logo end -->
+
+        <!-- nav close button start -->
+        <!-- add  "nav-btn-open" when nav open -->
+        <div
+          id="nav-btn"
+          class="relative mx-4 block size-10 cursor-pointer lg:hidden"
+        >
+          <hr />
+          <hr />
+          <hr />
+        </div>
+        <!-- nav close button end -->
+
+        <!-- navbar buttons start -->
+        <!-- add "navbar-open" when to show -->
+        <div
+          id="navbar-container"
+          class="absolute top-full max-lg:w-full max-lg:origin-top lg:top-[21px] lg:right-[84px] lg:transition-none xl:right-[160px]"
+        >
+          <ul
+            id="navbar"
+            class="*:max-lg:text-primary *:max-lg:border-primary/20 grid grid-cols-2 text-center *:cursor-pointer *:max-lg:border-b *:max-lg:bg-white *:max-lg:py-3 lg:mx-[30px] lg:flex lg:gap-[20px] lg:text-sm xl:gap-[30px] xl:text-base"
+          >
+            <!-- thêm tabline-active khi tab được chọn -->
+            <li class="tabline-active col-span-2">
+              <a href="#">TOP</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="location.html">LOCATION</a>
+              <span></span>
+            </li>
+            <li class="max-lg:border-l">
+              <a href="private_floor.html">PRIVATE FLOOR</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="spec.html">SPEC</a>
+              <span></span>
+            </li>
+            <li class="max-lg:border-l">
+              <a href="outline.html">OUTLINE</a>
+              <span></span>
+            </li>
+            <li class="col-span-2 lg:hidden">
+              <a
+                style="letter-spacing: 0.3em"
+                class=""
+                href="toi_awase_form.html"
+                target="_blank"
+                >お問い合わせ</a
+              >
+              <span></span>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar buttons end -->
+
+        <!-- 問い合わせ start -->
+        <div class="hidden h-full items-center bg-black px-8 lg:flex">
+          <a href="toi_awase_form.html" target="_blank">
+            <span class="hidden xl:block">お問い合わせ</span>
+            <span class="text-xl lg:block xl:hidden">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+          </a>
+        </div>
+        <!-- 問い合わせ end -->
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main content start -->
+    <div class="mt-[66px]">
+      <!-- logo and banner start -->
+      <section class="relative md:flex">
+        <div class="order-2 flex-[60%]">
+          <img src="./img/main.jpg" alt="" />
+          <span
+            class="text-shadow-note absolute right-2 bottom-1 text-sm font-medium"
+            >外観</span
+          >
+        </div>
+        <div
+          class="order-1 flex-[40%] md:flex md:items-center md:justify-center"
+        >
+          <div
+            class="inline-block bg-white p-5 max-md:absolute max-md:top-4 max-md:right-4 max-md:w-[35vw] max-md:rounded-md max-md:shadow-lg md:p-12"
+          >
+            <img src="./img/main_logo.svg" alt="" class=" " />
+          </div>
+        </div>
+      </section>
+      <!-- logo and banner end -->
+
+      <!-- VR iframe start -->
+      <section class="">
+        <div
+          id="vr-iframe"
+          class="bg-primary relative z-30 p-4 md:fixed md:top-[120px] md:right-[40px] md:h-[150px] md:w-[200px] md:p-0 md:shadow-lg lg:h-[200px] lg:w-[260px]"
+        >
+          <div
+            class="relative mx-auto h-[150px] w-[200px] lg:h-[200px] lg:w-[260px]"
+          >
+            <a
+              href="https://studio55-production-1.shapespark.com/bizflex_hamamatsuchou_building/"
+            >
+              <img src="./img/float_vr.jpg" alt="" class="max-lg:w-[200px]" />
+            </a>
+            <span
+              id="iframe-close-btn"
+              class="absolute top-0 right-0 cursor-pointer"
+            >
+              <img src="./img/float_close.png" alt="" />
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- VR iframe end -->
+
+      <!-- information start -->
+      <section>
+        <div class="bg-secondary">
+          <div class="px-[20px] pt-[60px] pb-[90px] max-lg:pb-15">
+            <div data-aos="fade-up" class="text-center">
+              <span class="bg-[#f8b500] px-5 py-2 uppercase shadow-md"
+                >information</span
+              >
+              <h2 class="mt-9 text-3xl font-medium tracking-wide">
+                Bizflex浜松町　資料請求・問合せ受付中
+              </h2>
+              <p class="mt-4 tracking-wide">
+                お問い合わせはヒューリック株式会社「新事業創造部」Tel:03-5623-8177
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              class="mx-auto mt-[72px] max-w-[1200px] gap-10 md:flex"
+            >
+              <div
+                class="relative flex-[40%] border-white pb-4 text-center md:border-b"
+              >
+                <span
+                  class="flex items-center justify-center before:absolute before:right-0 before:left-0 before:h-[1px] before:w-[full] before:bg-white before:content-['']"
+                >
+                  <span class="bg-secondary z-10 block px-1">
+                    <img src="./img/merit01.png" alt="" />
+                  </span>
+                </span>
+                <span class="mt-4 block">交　通</span>
+                <div class="mt-4 flex">
+                  <div class="flex-1">
+                    <p class="md:text-[2vw] xl:text-2xl">
+                      「浜松町」<span class="xl:text-xl">駅</span>
+                    </p>
+                    <p class="xl:text-xl">
+                      徒歩<span class="md:text-[2vw] xl:text-3xl">3</span>分
+                    </p>
+                  </div>
+                  <div class="flex-1 border-l border-white">
+                    <p class="md:text-[2vw] xl:text-2xl">
+                      「大門」<span class="xl:text-xl">駅</span>
+                    </p>
+                    <p class="xl:text-xl">
+                      徒歩<span class="md:text-[2vw] xl:text-3xl">5</span>分
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-[60%] max-md:mt-10">
+                <ul class="flex gap-10">
+                  <li
+                    class="info-item flex-1 border-b border-white pb-3 lg:pb-6"
+                  >
+                    <span class="info-icon">
+                      <span class="info-icon-wrapper">
+                        <img src="./img/merit02.png" alt="" />
+                      </span>
+                    </span>
+                    <span class="mt-4 block">基準階面積</span>
+                    <div class="mt-4 md:mt-8 md:h-[50px]">
+                      <p class="md:text-[2vw] xl:text-xl">
+                        約<span class="xl:text-3xl">44</span>坪
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="info-item flex-1 border-b border-white pb-3 lg:pb-6"
+                  >
+                    <span class="info-icon">
+                      <span class="info-icon-wrapper">
+                        <img src="./img/merit03.png" alt="" />
+                      </span>
+                    </span>
+                    <span class="mt-4 block">座席数</span>
+                    <div class="mt-4 md:mt-8 md:h-[50px]">
+                      <p class="md:text-[2vw] xl:text-xl">
+                        <span class="xl:text-3xl">22</span>席～
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="info-item flex-1 border-b border-white pb-3 lg:pb-6"
+                  >
+                    <span class="info-icon">
+                      <span class="info-icon-wrapper">
+                        <img src="./img/merit04.png" alt="" />
+                      </span>
+                    </span>
+                    <span class="mt-4 block">入居開始日</span>
+                    <div class="mt-4 md:mt-8 md:h-[50px]">
+                      <p class="md:text-[2vw] xl:text-xl">
+                        <span class="xl:text-3xl">2024</span>年<span
+                          class="xl:text-3xl"
+                          >2</span
+                        >月
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="mt-14 flex justify-center">
+              <a
+                href="toi_awase_form.html"
+                class="bg-secondary info-contact-btn hover:text-secondary relative block border border-white px-22 py-4 transition-colors duration-300 ease-in-out hover:bg-white"
+                target="_blank"
+              >
+                お問い合わせ
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- information end -->
+
+      <!-- information 2 start -->
+      <section
+        class="bg-[url(/img/bg_office.jpg)] bg-cover bg-center bg-no-repeat"
+      >
+        <div
+          class="mx-auto px-5 pt-16 pb-14 text-center md:pt-[100px] md:pb-20"
+        >
+          <div data-aos="fade-up">
+            <h1 class="text-4xl font-semibold tracking-widest">
+              オフィス新次元
+            </h1>
+            <span class="mx-auto mt-8 block h-[2px] w-24 bg-white"></span>
+            <p class="mt-8 text-lg leading-7 font-medium tracking-wide">
+              Bizflexはデザイン・スペック共に<br
+                class="md:hidden"
+              />優れたワークプレイスを<br
+                class="max-md:hidden lg:hidden"
+              />選びぬかれた<br class="md:hidden" />都心の好立地で提供。<br />
+              加えてフレキシブルな契約など、<br
+                class="md:hidden"
+              />従来のオフィスにはない<br
+                class="max-md:hidden lg:hidden"
+              />ソフトサービスまで<br
+                class="md:hidden"
+              />備える一歩先のオフィスです。
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            class="mx-auto mt-16 max-w-[960px] justify-between gap-5 md:flex"
+          >
+            <div class="relative inline-block">
+              <img
+                class="mx-auto shadow-xl max-md:aspect-video max-md:w-[600px] max-md:object-cover"
+                src="./img/gaikan.jpg"
+                alt=""
+              />
+              <span class="text-shadow-note absolute right-2 bottom-1"
+                >外観</span
+              >
+            </div>
+            <div class="flex flex-col justify-between gap-4 max-md:mt-3">
+              <div>
+                <div class="relative inline-block">
+                  <img class="max-md:w-[600px]" src="./img/img01.jpg" alt="" />
+                  <span
+                    class="text-shadow-note absolute right-2 bottom-1 text-sm"
+                    >10階相当の高さからの眺望</span
+                  >
+                  <h3
+                    class="text-shadow-note absolute top-[50%] left-[50%] mt-[-16px] ml-[-84px] text-2xl font-medium"
+                  >
+                    厳選された立地
+                  </h3>
+                </div>
+                <p
+                  class="text-primary mx-auto mt-[-6px] bg-white py-1 font-medium tracking-wide max-lg:text-sm max-md:max-w-[600px]"
+                >
+                  都心のビジネスエリアで徒歩3分以内の駅近立地。
+                </p>
+              </div>
+              <div>
+                <div class="relative inline-block">
+                  <img class="max-md:w-[600px]" src="./img/img02.jpg" alt="" />
+                  <span
+                    class="text-shadow-note absolute right-2 bottom-1 text-sm"
+                    >サブエントランス（北側）</span
+                  >
+                  <h3
+                    class="text-shadow-note absolute top-[50%] left-[50%] mt-[-16px] ml-[-84px] text-2xl font-medium"
+                  >
+                    洗練された建物
+                  </h3>
+                </div>
+                <p
+                  class="text-primary mx-auto mt-[-6px] bg-white py-1 font-medium tracking-wide max-lg:text-sm max-md:max-w-[600px]"
+                >
+                  高いデザイン性と強固な建物スペックを備える。
+                </p>
+              </div>
+              <div>
+                <div class="relative inline-block">
+                  <img class="max-md:w-[600px]" src="./img/img03.jpg" alt="" />
+                  <span
+                    class="text-shadow-note absolute right-2 bottom-1 text-sm"
+                    >WORK SPACE</span
+                  >
+                  <h3
+                    class="text-shadow-note absolute top-[50%] left-[50%] mt-[-16px] ml-[-84px] text-2xl font-medium"
+                  >
+                    柔軟な借り方
+                  </h3>
+                </div>
+                <p
+                  class="text-primary mx-auto mt-[-6px] bg-white py-1 font-medium tracking-wide max-lg:text-sm max-md:max-w-[600px]"
+                >
+                  借りやすく、返しやすい柔軟な賃貸システム。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- information 2 end -->
+
+      <!-- location and other start-->
+      <section class="">
+        <!-- location start -->
+        <div data-aos="fade-up" class="mt-10 lg:pt-14">
+          <div class="relative">
+            <a
+              class="location-bg relative flex aspect-25/8 items-center justify-center overflow-hidden"
+              href="location.html"
+            >
+              <div class="relative text-center">
+                <h2 class="text-[28px] uppercase md:mb-6 md:text-[40px]">
+                  location
+                </h2>
+                <span
+                  class="mx-auto block w-[130px] border border-white text-center text-xs uppercase transition duration-800 ease-in-out md:w-[210px] md:text-base"
+                  >more</span
+                >
+              </div>
+            </a>
+            <span
+              class="text-shadow-note absolute right-2 bottom-1 text-xs md:text-sm"
+              >10階相当の高さからの眺望</span
+            >
+          </div>
+        </div>
+        <!-- location end -->
+
+        <!-- private floor start -->
+        <div data-aos="fade-up" class="mt-10 lg:pt-14">
+          <div class="relative">
+            <a
+              class="private-bg relative flex aspect-25/8 items-center justify-center overflow-hidden"
+              href="private_floor.html"
+            >
+              <div class="relative text-center">
+                <h2 class="text-[28px] uppercase md:mb-6 md:text-[40px]">
+                  private floor
+                </h2>
+                <span
+                  class="mx-auto block w-[130px] border border-white text-center text-xs uppercase transition duration-800 ease-in-out md:w-[210px] md:text-base"
+                  >more</span
+                >
+              </div>
+            </a>
+            <span
+              class="text-shadow-note absolute right-2 bottom-1 text-xs uppercase md:text-sm"
+              >communication area</span
+            >
+          </div>
+        </div>
+        <!-- private floor end -->
+
+        <!-- specification start -->
+        <div data-aos="fade-up" class="mt-10 lg:pt-14">
+          <div class="relative">
+            <a
+              class="specification-bg relative flex aspect-25/8 items-center justify-center overflow-hidden"
+              href="spec.html"
+            >
+              <div class="relative text-center">
+                <h2 class="text-[28px] uppercase md:mb-6 md:text-[40px]">
+                  specification
+                </h2>
+                <span
+                  class="mx-auto block w-[130px] border border-white text-center text-xs uppercase transition duration-800 ease-in-out md:w-[210px] md:text-base"
+                  >more</span
+                >
+              </div>
+            </a>
+            <span
+              class="text-shadow-note absolute right-2 bottom-1 text-xs md:text-sm"
+              >外観</span
+            >
+          </div>
+        </div>
+        <!-- specification end -->
+
+        <!-- noted start -->
+        <div class="text-primary mx-5 mt-3 text-[9px] max-lg:mb-3 md:text-xs">
+          <span
+            >※記載の内容は2024年1月時点のもので、予告なく変更となる可能性があります。</span
+          ><br />
+          <span>※掲載の写真はイメージです。</span>
+        </div>
+        <!-- noted end -->
+
+        <!-- brand site start -->
+        <div data-aos="fade-up" class="lg:pt-14">
+          <div class="relative">
+            <a
+              class="brandsite-bg relative flex aspect-25/8 items-center justify-center overflow-hidden"
+              href="https://www.hulic.co.jp/business/rent/bizflex/"
+              target="_blank"
+            >
+              <div
+                class="relative items-center text-center max-md:mx-4 max-md:flex max-md:gap-10 md:max-lg:w-[30%]"
+              >
+                <img
+                  class="max-md:w-[150px]"
+                  src="./img/bizflex_logo.svg"
+                  alt=""
+                />
+                <span
+                  class="brand-site-angle text-primary border-primary md:w-100% relative mx-auto block border py-1 text-center text-[10px] uppercase transition duration-800 ease-in-out max-md:px-4 md:mt-4 md:text-base lg:mt-7"
+                  >brand site</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- brand site end -->
+
+        <!-- 問い合わせ start -->
+        <div>
+          <a
+            href="toi_awase_form.html"
+            class="bg-secondary group flex items-center justify-center py-20"
+            target="_blank"
+          >
+            <span
+              class="group-hover:text-primary relative block w-[210px] border border-white py-2 text-center text-xs transition duration-800 ease-in-out group-hover:bg-white md:w-[260px] md:text-base"
+              >お問い合わせ
+              <span
+                style="clip-path: polygon(0 0, 90% 50%, 0 100%)"
+                class="group-hover:bg-primary absolute top-1/2 left-10 h-4 w-4 -translate-y-1/2 bg-white transition duration-800 ease-in-out"
+              ></span>
+            </span>
+          </a>
+        </div>
+        <!-- 問い合わせ end -->
+      </section>
+      <!-- location and other end-->
+    </div>
+    <!-- main content end -->
+
+    <!-- footer start -->
+    <footer class="bg-primary">
+      <div class="justify-center px-5 py-10 md:flex md:py-16">
+        <div class="mb-8 flex items-center justify-center">
+          <img src="./img/foot_logo.svg" alt="" />
+        </div>
+        <div
+          class="border-white py-5 max-md:border-t md:ml-10 md:border-l md:pl-10 lg:ml-16 lg:pl-16"
+        >
+          <div id="footer-navbar-container" class="">
+            <ul
+              id="footer-navbar"
+              class="text-xs *:cursor-pointer *:max-md:mt-1 *:max-md:inline-block md:flex md:gap-[16px] md:text-center"
+            >
+              <!-- thêm tabline-active khi tab được chọn -->
+              <li class="tabline-active col-span-2">
+                <a href="#">TOP</a>
+                <span></span>
+              </li>
+              <br />
+              <li>
+                <a href="location.html">LOCATION</a>
+                <span></span>
+              </li>
+              <br />
+              <li class="">
+                <a href="private_floor.html">PRIVATE FLOOR</a>
+                <span></span>
+              </li>
+              <br />
+              <li>
+                <a href="spec.html">SPEC</a>
+                <span></span>
+              </li>
+              <br />
+              <li class="">
+                <a href="outline.html">OUTLINE</a>
+                <span></span>
+              </li>
+            </ul>
+          </div>
+          <h3 class="mt-6 text-xs tracking-wide">
+            お問い合わせは「新事業創造部」
+          </h3>
+          <div class="mt-1 flex">
+            <span class="text-xl md:text-3xl">03-5623-8177</span>
+            <div class="ml-4 text-xs font-light">
+              <span>営業時間／平日9:00～17:15</span><br />
+              <span>（祝祭日、年末年始を除く）</span>
+            </div>
+          </div>
+          <div class="mt-5 text-xs">
+            <a
+              class="transition duration-300 ease-in-out hover:opacity-70"
+              href="https://www.hulic.co.jp/siteinfo/privacy.html"
+            >
+              <span>個人情報の取り扱い</span> </a
+            ><br class="md:hidden" />
+            <a
+              class="inline-block transition duration-300 ease-in-out hover:opacity-70 max-md:mt-1 md:ml-3"
+              href="https://www.hulic.co.jp/business/rent/bizflex/privacy/"
+            >
+              <span>顔認証システム利用における個人情報の取り扱い</span>
+            </a>
+          </div>
+          <h3 class="mt-5">Copyright © Hulic Co., Ltd Rights Reserved.</h3>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- JS script -->
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation duration in milliseconds
+        once: true, // Whether animation should happen only once
+        mirror: false, // Whether elements should animate out while scrolling past them
+      });
+    </script>
+  </body>
+</html>

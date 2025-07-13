@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizflex 総合問合せフォーム | FormBridge</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <!-- npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch -->
+    <!-- header start -->
+    <header>
+      <div
+        class="bg-primary top-0 z-40 flex h-[66px] w-full items-center justify-between"
+      >
+        <!-- logo start -->
+        <div class="ml-4 flex w-[246px] items-center md:w-[280px]">
+          <a href="#">
+            <img src="./img/bizflex_logo.png" alt="" />
+          </a>
+        </div>
+        <!-- logo end -->
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main content start -->
+    <div class="bg-[#f5f5f2] text-gray-800">
+      <div class="mx-auto max-w-[1264px] pb-6">
+        <h1 class="mx-8 pt-6 pb-3 text-2xl font-semibold">
+          ー Bizflex 総合問合せフォーム
+        </h1>
+        <div
+          class="mx-8 rounded-md border border-gray-200 bg-white px-8 py-4 shadow-sm"
+        >
+          <form action="">
+            <div id="toiawase-form" class="tracking-[1px]">
+              <!-- building start -->
+              <div id="building" class="input-field">
+                <!-- thêm class "text-red-600" nếu user bỏ không chọn một mục nào -->
+                <div class="input-group">
+                  <label class="input-group__lable" for=""
+                    >お問い合わせ物件（複数選択可）
+                  </label>
+                  <!-- khi được click chọn, thêm class "text-indigo-600",  -->
+                  <div class="input-group__content">
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> Bizflex麻布十番（募集区画有） </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> Bizflex六本木 </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> Bizflex浜松町 </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> Bizflex神田 </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> Bizflex東京八重洲 </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> その他 </label>
+                    </div>
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- building end -->
+
+              <!-- item start -->
+              <div id="komoku" class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable not-require" for=""
+                    >お問い合わせ項目（複数選択可）
+                  </label>
+                  <div class="input-group__content">
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> 資料請求 </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> 内覧を希望する </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for="">
+                        Bizflexシリーズ他の物件に関するお問い合わせ
+                      </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for="">
+                        キャンセル待ちに登録する（下記「お問合せ内容」に詳細ご記入下さい。）
+                      </label>
+                    </div>
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> その他 </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item end -->
+
+              <!-- company name start -->
+              <div class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable" for="">貴社名 </label>
+                  <div class="input-group__content">
+                    <input class="" type="text" />
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- company name end -->
+
+              <!-- client name start -->
+              <div class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable" for="">指名 </label>
+                  <div class="input-group__content">
+                    <input class="" type="text" />
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- client name end -->
+
+              <!-- email start -->
+              <div class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable" for=""
+                    >メールアドレス
+                  </label>
+                  <div class="input-group__content">
+                    <input class="" type="email" />
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- email end -->
+
+              <!-- mobile number start -->
+              <div class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable" for="">携帯電話 </label>
+                  <div class="input-group__content">
+                    <input class="" type="tel" />
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- mobile number end -->
+
+              <!-- area hope start -->
+              <div class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable" for=""
+                    >希望面積（坪）
+                  </label>
+                  <div class="input-group__for-select relative">
+                    <input type="text" placeholder="選択" readonly />
+                    <span class="text-gray-300"
+                      ><i class="fa-solid fa-angle-down"></i
+                    ></span>
+                    <div
+                      class="absolute top-10 left-0 z-10 hidden w-[250px] rounded-sm border border-gray-200 bg-white shadow-lg"
+                    >
+                      <ul class="area-list">
+                        <li class="area-item">~10坪</li>
+                        <li class="area-item">11坪~30坪</li>
+                        <li class="area-item">31坪~50坪</li>
+                        <li class="area-item">51坪~70坪</li>
+                        <li class="area-item">71坪~90坪</li>
+                        <li class="area-item">91坪~110坪</li>
+                        <li class="area-item">110坪以上</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- area hope end -->
+
+              <!-- stay hope start -->
+              <div class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable" for="">入居希望時期 </label>
+                  <div class="input-group__for-select relative">
+                    <input type="text" placeholder="選択" readonly />
+                    <span class="text-gray-300"
+                      ><i class="fa-solid fa-angle-down"></i
+                    ></span>
+                    <div
+                      class="absolute top-10 left-0 z-10 hidden w-[250px] rounded-sm border border-gray-200 bg-white shadow-lg"
+                    >
+                      <ul class="area-list">
+                        <li class="area-item">3か月以内</li>
+                        <li class="area-item">半年以内</li>
+                        <li class="area-item">1年以内</li>
+                        <li class="area-item">未定</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- stay hope end -->
+
+              <!-- toiawase details start -->
+              <div class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable not-require" for=""
+                    >お問い合わせ内容（ご自由に記載ください。）
+                  </label>
+                  <div class="input-group__content">
+                    <textarea name="" id=""></textarea>
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- toiawase details end -->
+
+              <!-- personal start -->
+              <div id="personal" class="input-field">
+                <div class="input-group">
+                  <label class="input-group__lable" for=""
+                    >個人情報取扱方針を確認の上 同意する
+                  </label>
+                  <div class="input-group__content">
+                    <div class="input-group__content-item">
+                      <input type="checkbox" />
+                      <label for=""> 同意する </label>
+                    </div>
+                  </div>
+                  <span class="input-group__require">必須項目</span>
+                </div>
+              </div>
+              <!-- personal end -->
+
+              <p class="text-sm">
+                <a
+                  class="text-indigo-600"
+                  href="https://www.hulic.co.jp/siteinfo/privacy.html?_ga=2.233474462.1463671397.1751069969-2086732815.1749456986&_gl=1*1e555d4*_gcl_au*Mzc5ODIzOTcwLjE3NDk0NTY5ODY.*_ga*MjA4NjczMjgxNS4xNzQ5NDU2OTg2*_ga_BNV3C3XLFZ*czE3NTEwODA5OTkkbzI4JGcxJHQxNzUxMDgxMjY2JGo1OCRsMCRoOTg4MjczNDI5"
+                  target="_blank"
+                  >個人情報保護方針</a
+                >をご確認のうえ、上記「同意する」のチェックボックスにチェックを入れてから回答ボタンを押してください。
+              </p>
+
+              <button
+                class="mt-10 mb-6 cursor-pointer rounded-sm bg-[#00af92] px-14 py-2 font-semibold text-white hover:bg-[#00af92e3]"
+              >
+                送信
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- main content end -->
+
+    <!-- footer start -->
+    <footer class="bg-primary h-8"></footer>
+    <!-- footer end -->
+
+    <!-- JS script -->
+    <script src="./js/toiawase.js"></script>
+  </body>
+</html>
