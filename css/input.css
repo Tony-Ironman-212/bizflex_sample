@@ -276,19 +276,19 @@
   }
 
   .location-bg::before {
-    background-image: url('/img/bg_location.jpg');
+    background-image: url('../img/bg_location.jpg');
   }
 
   .private-bg::before {
-    background-image: url('/img/bg_private.jpg');
+    background-image: url('../img/bg_private.jpg');
   }
 
   .specification-bg::before {
-    background-image: url('/img/bg_spec.jpg');
+    background-image: url('../img/bg_spec.jpg');
   }
 
   .brandsite-bg::before {
-    background-image: url('/img/bizflex_bg.jpg');
+    background-image: url('../img/bizflex_bg.jpg');
   }
 
   .brand-site-angle::before {
